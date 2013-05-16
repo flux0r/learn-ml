@@ -15,6 +15,8 @@ p = zeros(m, 1);
 %               You should set p to a vector of 0's and 1's
 %
 
+yHat = X*theta;
+p = 1./(1 + exp(-yHat)) > 0.5;
 
 
 
